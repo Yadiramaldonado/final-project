@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    width: 480px;
+}
+.header {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    
+}
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 20px;
+    
+}
+
+.section h1 {
+    font-size: 24px;
+    margin: 0;
+    justify-content: center;
+}
+.section h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    display: none;
+
+}
+.slogan p {
+    font-size: 16px;
+    margin: 10px 0;
+    display: none;
+}
+
+.section p {
+    font-size: 13px;
+    margin: 10px 0;
+}
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.content h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.content p {
+    font-size: 14px;
+    text-align: center;
+}
+.content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: rgb(2, 2, 34);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: rgb(2, 2, 34);
+}
+.link-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.link-container a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.link-container img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+@media screen and (min-width: 480px) {
+    body {
+        margin: 0 auto;
+        width: 480px;
+    }
+
+    .header {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    .section h1 {
+        font-size: 22px;
+    }
+    .section p {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content img {
+        margin-bottom: 15px;
+    }
+
+    .content h4 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .content button {
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .section h1,
+    .section p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .slogan {
+        text-align: right;
+        font-size: 10px;
+        color: #555;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .section {
+        width: 60%;
+        text-align: left;
+    }
+
+    .section h1 {
+        font-size: 20px;
+        
+    }
+    .section h3 {
+        margin-top: 10px;
+        font-size: 20px;
+        display: block;
+        background-color: rgb(93, 48, 136);
+    }
+
+    .section .quote {
+        margin: 15px 0;
+        font-size: 16px;
+    }
+
+    .content {
+        width: 35%;
+        text-align: left;
+    }
+
+    .content img {
+        margin: 0 0 15px 0;
+    }
+
+    .content h4 {
+        margin-top: 15px;
+    }
+    .content p {
+        margin-bottom: 15px;
+    }
+}
+    
+
